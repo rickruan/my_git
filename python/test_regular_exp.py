@@ -47,3 +47,29 @@ result2 = pattern.findall('run88oob123google456', 0, 10)
 
 print(result1)
 print(result2)
+
+ltr='ABC\\-001'
+print(ltr)
+
+ltr=r'ABC\-001'
+print(ltr)
+
+print(re.match(r'^\d{3}\-\d{3,8}$', '010-12345').group())
+print(re.split(r'[\s\,\;]+', 'a,b;; c  d'))
+
+t = '19:05:30'
+m = re.match(r'^(0[0-9]|1[0-9]|2[0-3]|[0-9])\:(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|[0-9])\:(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|[0-9])$',t)
+print(m.group())
+print(m.group(1))
+print(m.group(2))
+print(m.group(3))
+
+print(re.match(r'^(\d+)(0*)$', '102300').groups())
+print(re.match(r'^(\d+?)(0*)$','1023000').groups())
+print(re.split('\d+','one1two2three3four4five5'))
+
+text = "JGood is a handsome boy, he is cool, clever, and so on..."
+print(re.sub(r'\s+', '-', text))
+text_1 = re.sub(r'\s+', '-', text)
+print(re.sub(r'\s+', '[]', text))
+print(re.sub(r'\-+', lambda m:'['+m.group(0)+']', text_1,0))

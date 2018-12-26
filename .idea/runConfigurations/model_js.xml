@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="model.js" type="NodeJSConfigurationType" singleton="false" path-to-js-file="model.js" working-dir="$PROJECT_DIR$/Node_project">
+    <method v="2" />
+  </configuration>
+</component>
