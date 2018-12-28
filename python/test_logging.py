@@ -1,6 +1,12 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+class Mammalia
+
+    def __init__(self) -> None:
+        super().__init__()
+
+
 __author__='Rick Ruan'
 import logging
 from logging import handlers

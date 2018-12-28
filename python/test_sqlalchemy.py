@@ -28,7 +28,7 @@ class User(Base):
     created_at = Column(TIMESTAMP())
 
 
-engine = create_engine('mysql+mysqlconnector://data_op:data_op123@localhost:3306/aewsome')
+engine = create_engine('mysql+mysqlconnector://data_op:data_op123@localhost:3306/awesome')
 
 DBSession = sessionmaker(bind=engine)
 
@@ -37,7 +37,7 @@ session = DBSession()
 uid = next_id()
 dtime = time.time()
 
-new_user=User(id=uid,email='Ruanchenghua@hotmail.com',passwd='old',admin=1,name='Ruan',image='/image/0022.jpg',created_at=dtime)
+new_user=User(id=uid,email='Ruanhua@hotmail.com',passwd='old',admin=1,name='Ruan',image='/image/0022.jpg',created_at=dtime)
 session.add(new_user)
 session.commit()
 session.close()
